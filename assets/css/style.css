@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 576px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+
+nav .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(#f00, rgb(173, 0, 0), #000, #000);
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  position: fixed;
+  z-index: 1;
+  user-select: none;
+}
+
+nav .container ul li {
+  display: inline-block;
+  margin: 0 6rem;
+}
+
+nav .container ul li a {
+  color: #fff;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  nav .container {
+    flex-direction: column;
+  }
+
+  nav .container ul li {
+    margin: 1rem 0;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Header */
+
+header .header-text {
+  padding-top: calc(112px + 10rem);
+  padding-bottom: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+
+header .header-text h2 {
+  font-size: 4rem;
+  margin: 0 2rem;
+}
+
+header .header-text h2.style {
+  background-color: #f00;
+  padding: 0.5rem;
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  header .header-text {
+    flex-direction: column;
+  }
+
+  header .header-text h2 {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Transition */
+
+.transition {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+
+.transition .box {
+  width: 200px;
+  height: 20px;
+  background-color: #f00;
+  margin: 0 1rem;
+}
+
+/* Section - Qanlı Yanvar Haqqında */
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#january20 .section-text {
+  padding-left: 15rem;
+}
+
+#january20 .section-photo {
+  padding-right: 20rem;
+  padding-left: 3.2rem;
+  user-select: none;
+}
+
+@media screen and (max-width: 1000px) {
+  section {
+    flex-direction: column;
+  }
+
+  #january20 .section-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  #january20 .section-text p {
+    text-align: left;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+  }
+
+  #january20 .section-photo {
+    padding: 0;
+  }
+}
+
+/* Section - Həlak Olanlar */
+
+#dying .section-text {
+  padding-left: 15rem;
+  padding-right: 40rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #dying .section-text {
+    padding: 0;
+    text-align: center;
+  }
+
+  #dying .section-text p {
+    text-align: left;
+    padding-left: 2rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.copyright a {
+  color: #fff;
+  display: block;
+  text-align: center;
+}
+
+/* Scrollbar style */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f00;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
